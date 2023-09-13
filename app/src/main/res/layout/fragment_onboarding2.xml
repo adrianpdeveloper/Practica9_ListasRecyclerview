@@ -51,26 +51,29 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/onboarding_skip_btn"
-            style="@style/button_skip"
+            style="@style/skip_btn"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/button_skip"
+
+            app:backgroundTintMode="multiply"
             android:background="@drawable/onboarding2_skip_btn"
-            android:layout_marginRight="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/onboarding_next_btn_2"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/onboarding_image_2"
-            app:layout_constraintHorizontal_chainStyle="spread_inside"/>
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/onboarding_next_btn_2"
-            style="@style/button_next_2"
-            android:background="@drawable/onboarding2_next_btn"
+            style="@style/next_btn2"
             android:layout_marginLeft="10dp"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/button_next"
+            android:background="#000000"
+            app:backgroundTintMode="multiply"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/onboarding_skip_btn"

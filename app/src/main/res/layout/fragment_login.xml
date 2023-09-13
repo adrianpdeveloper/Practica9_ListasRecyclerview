@@ -80,14 +80,11 @@
         android:layout_marginHorizontal="16dp"
         app:icon="@drawable/baseline_arrow_forward_white_24dp"
         android:text="@string/main_activity_login_button"
-        android:textAllCaps="false"
         app:layout_constraintTop_toBottomOf="@+id/register_activity_password_il"
-        style="@style/Widget.MaterialComponents.Button"
-        android:insetTop="0dp"
-        android:insetBottom="0dp"
-        android:enabled="false"
-        android:textSize="24sp"
+        style="@style/LoginButton"
+        android:background="@drawable/login_button"
         app:iconGravity="textEnd"
+
         />
 
     <androidx.appcompat.widget.AppCompatTextView

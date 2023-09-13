@@ -1,5 +1,6 @@
 package com.example.practica7_viewpager.OnBoarding.fragments;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -15,6 +16,8 @@ import com.example.practica7_viewpager.OnBoarding.viewpager.PageAdapter;
 import com.example.practica7_viewpager.R;
 import com.example.practica7_viewpager.databinding.FragmentOnBoarding1Binding;
 import com.example.practica7_viewpager.OnBoarding.fragments.ContentFragment;
+import com.example.practica7_viewpager.home.HomeActivity;
+import com.example.practica7_viewpager.login.LoginActivity;
 
 public class OnBoardingFragment1 extends Fragment {
     private FragmentOnBoarding1Binding binding;
@@ -47,6 +50,8 @@ public class OnBoardingFragment1 extends Fragment {
             @Override
             public void onClick(View view) {
                 //Utiliza el metodo de la activity implementado en ContentFragment
+                /*Intent intent = new Intent(getContext(), HomeActivity.class);
+                startActivity(intent);*/
                 if (getActivity() instanceof ContentFragment.ViewPagerChangeListener) {
                     ((ContentFragment.ViewPagerChangeListener) getActivity()).changeViewPagerPosition(1); // Cambia al fragmento deseado
                 }

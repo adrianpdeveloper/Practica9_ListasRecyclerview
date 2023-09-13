@@ -18,57 +18,13 @@
         app:layout_constraintTop_toTopOf="parent"
         />
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/homeactivity_btn1"
-        style="@style/home_activity_icon_btn"
-        app:icon="@drawable/baseline_camera_alt_black_24dp"
-        android:backgroundTint="@color/home_blue"
-        app:layout_constraintEnd_toStartOf="@+id/homeactivity_btn3"
-        app:layout_constraintHorizontal_chainStyle="spread_inside"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/homeactivity_title"
-        android:layout_marginEnd="8dp"
-        />
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/homeactivity_btn3"
-        style="@style/home_activity_icon_btn"
-        android:backgroundTint="@color/home_purple"
-        app:icon="@drawable/baseline_favorite_black_24dp"
-        app:layout_constraintEnd_toStartOf="@+id/homeactivity_btn2"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/homeactivity_btn1"
-        app:layout_constraintTop_toBottomOf="@+id/homeactivity_title"
-        android:layout_marginHorizontal="8dp"
-        />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/homeactivity_btn2"
-        style="@style/home_activity_icon_btn"
-        android:backgroundTint="@color/home_pink"
-        app:icon="@drawable/baseline_terrain_black_24dp"
-        app:layout_constraintEnd_toStartOf="@+id/homeactivity_btn4"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/homeactivity_btn3"
-        app:layout_constraintTop_toBottomOf="@+id/homeactivity_title"
-        android:layout_marginHorizontal="8dp"/>
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/homeactivity_btn4"
-        style="@style/home_activity_icon_btn"
-        android:backgroundTint="@color/home_yellow"
-        app:icon="@drawable/baseline_face_black_24dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/homeactivity_btn2"
-        app:layout_constraintTop_toBottomOf="@+id/homeactivity_title"
-        android:layout_marginStart="8dp"/>
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/homeactivity_fragment_frame"
-        app:layout_constraintTop_toBottomOf="@+id/homeactivity_btn1"
+        app:layout_constraintTop_toBottomOf="@+id/homeactivity_title"
         />
 
     <com.google.android.material.card.MaterialCardView

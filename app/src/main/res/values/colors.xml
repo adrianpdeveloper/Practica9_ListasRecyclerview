@@ -15,9 +15,13 @@
     <color name="onboarding3_background">#c7e0ffff</color>
 
     <color name="home_blue">#cbe3ff</color>
+    <color name="home_blue2">#A6CBE3FF</color>
     <color name="home_purple">#ebddff</color>
+    <color name="home_purple2">#A6EBDDFF</color>
     <color name="home_pink">#fedbf5</color>
+    <color name="home_pink2">#A6FEDBF5</color>
     <color name="home_yellow">#fff2ae</color>
+    <color name="home_yellow2">#A6FFF2AE</color>
     <color name="home_turquoise">#cefff7</color>
 
     <color name="register_activity_background_green">#cffff6</color>
@@ -26,4 +30,12 @@
     <color name="primary_variant_green">#00675b</color>
     <color name="register_activity_btn_yellow_enabled">#ffc107</color>
     <color name="register_activity_btn_yellow_disabled">#E4BE49</color>
+
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="greyPrimary">#191D21</color>
+    <color name="grey">#535252</color>
+
 </resources>

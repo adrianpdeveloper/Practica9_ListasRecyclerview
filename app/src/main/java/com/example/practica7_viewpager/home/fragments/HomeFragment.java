@@ -1,6 +1,7 @@
 package com.example.practica7_viewpager.home.fragments;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -40,6 +41,7 @@ public class HomeFragment extends Fragment {
     }
 
     public void fragmentRentCar() {
+        Log.i("Fragment","PULSADO dentro");
         getChildFragmentManager().beginTransaction().add(binding.homeactivityFragmentFrame.getId(), new RentCarFragment()).commitAllowingStateLoss();
     }
 
