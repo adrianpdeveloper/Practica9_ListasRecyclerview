@@ -11,6 +11,7 @@ import android.view.MenuItem;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.content.ContextCompat;
+import androidx.fragment.app.Fragment;
 import androidx.viewpager2.widget.ViewPager2;
 
 import com.example.practica7_viewpager.OnBoarding.viewpager.PageAdapter;
@@ -21,6 +22,8 @@ import com.example.practica7_viewpager.home.viewpager.HomePageAdapter;
 import com.example.practica7_viewpager.model.User;
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
+
+import java.util.List;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -33,6 +36,10 @@ public class HomeActivity extends AppCompatActivity {
     ViewPager2 viewPager2;
     TabLayout tabLayout;
     private HomeFragment homeFragment;
+
+    List<Fragment> fragments = getSupportFragmentManager().getFragments();
+
+    public int fragmentPosition;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -134,8 +141,12 @@ public class HomeActivity extends AppCompatActivity {
         }catch (Exception e){
             Log.i("Mensaje", "No hay password ni contraseña");
         }
-
     }
+    public int getCurrentFragment(){
+        int position = viewPager2.getCurrentItem();
+        return position;
+    }
+
     /*private void inflateFragment() {
         getSupportFragmentManager()
                 .beginTransaction()

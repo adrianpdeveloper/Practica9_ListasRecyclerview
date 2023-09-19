@@ -24,11 +24,11 @@ public class HomePageAdapter extends FragmentStateAdapter {
             case 0:
                 return new HomeFragment();
             case 1:
-                return new HomeFragment2();
+                return new HomeFragment2().newInstance(position+1);
             case 2:
-                return new HomeFragment3();
+                return new HomeFragment3().newInstance(position+1);
             case 3:
-                return new HomeFragment4();
+                return new HomeFragment4().newInstance(position+1);
         }
 
     }

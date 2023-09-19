@@ -50,11 +50,11 @@ public class OnBoardingFragment1 extends Fragment {
             @Override
             public void onClick(View view) {
                 //Utiliza el metodo de la activity implementado en ContentFragment
-                /*Intent intent = new Intent(getContext(), HomeActivity.class);
-                startActivity(intent);*/
-                if (getActivity() instanceof ContentFragment.ViewPagerChangeListener) {
+                Intent intent = new Intent(getContext(), HomeActivity.class);
+                startActivity(intent);
+                /*if (getActivity() instanceof ContentFragment.ViewPagerChangeListener) {
                     ((ContentFragment.ViewPagerChangeListener) getActivity()).changeViewPagerPosition(1); // Cambia al fragmento deseado
-                }
+                }*/
 
             }
         });
