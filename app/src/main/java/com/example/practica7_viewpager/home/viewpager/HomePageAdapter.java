@@ -24,6 +24,7 @@ public class HomePageAdapter extends FragmentStateAdapter {
             case 0:
                 return new HomeFragment();
             case 1:
+                //Proporciona la posicion al el fragment
                 return new HomeFragment2().newInstance(position+1);
             case 2:
                 return new HomeFragment3().newInstance(position+1);

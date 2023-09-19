@@ -27,6 +27,7 @@ public class HomeFragment2 extends Fragment {
         // Required empty public constructor
     }
 
+    //Recoje la posicion proporcionada de HomePageAdapter
     public static HomeFragment2 newInstance(int position) {
 
         Bundle args = new Bundle();
@@ -55,6 +56,7 @@ public class HomeFragment2 extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        //Muestra la posicion
         binding.fragment2Tv.setText("Fragment: "+position);
     }
 
