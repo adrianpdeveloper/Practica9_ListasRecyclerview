@@ -37,5 +37,13 @@
     <color name="teal_700">#FF018786</color>
     <color name="greyPrimary">#191D21</color>
     <color name="grey">#535252</color>
+    <color name="classic_car">#b5784c</color>
+    <color name="sport_car">#5ab3f3</color>
+    <color name="flying_car">#8281c0</color>
+    <color name="electic_car">#28323c</color>
+    <color name="motor_home">#7bafaa</color>
+    <color name="pick_up_car">#ab8c71</color>
+    <color name="air_plain">#a24a44</color>
+    <color name="bus">#e2c967</color>
 
 </resources>

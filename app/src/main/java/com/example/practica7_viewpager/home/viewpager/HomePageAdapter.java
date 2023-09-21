@@ -6,7 +6,7 @@ import androidx.fragment.app.FragmentActivity;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
 import com.example.practica7_viewpager.home.fragments.HomeFragment;
-import com.example.practica7_viewpager.home.fragments.HomeFragment2;
+import com.example.practica7_viewpager.home.fragments.home_fragment_2.HomeFragment2;
 import com.example.practica7_viewpager.home.fragments.HomeFragment3;
 import com.example.practica7_viewpager.home.fragments.HomeFragment4;
 

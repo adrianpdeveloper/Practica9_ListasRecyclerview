@@ -1,21 +1,21 @@
-package com.example.practica7_viewpager.home.fragments;
+package com.example.practica7_viewpager.home.fragments.home_fragment_2;
 
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.viewpager2.widget.ViewPager2;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.practica7_viewpager.R;
+import com.example.practica7_viewpager.data.RepositoryCars;
 import com.example.practica7_viewpager.databinding.FragmentHome2Binding;
-import com.example.practica7_viewpager.databinding.FragmentHomeBinding;
-import com.example.practica7_viewpager.databinding.FragmentOnboarding2Binding;
 import com.example.practica7_viewpager.home.HomeActivity;
+import com.example.practica7_viewpager.home.fragments.home_fragment_2.adapter.CarAdapter;
 
 public class HomeFragment2 extends Fragment {
 
@@ -56,8 +56,16 @@ public class HomeFragment2 extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        //Muestra la posicion
-        binding.fragment2Tv.setText("Fragment: "+position);
+        adapter();
+    }
+
+    private void adapter() {
+
+        RecyclerView.LayoutManager layoutManager= new LinearLayoutManager(getContext());
+        CarAdapter adapter = new CarAdapter(RepositoryCars.getCarList());
+        binding.homeFragment2Recycler.setAdapter(adapter);
+        binding.homeFragment2Recycler.setLayoutManager(layoutManager);
+
     }
 
 }
